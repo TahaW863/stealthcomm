@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      database: secure
+      port: 27017
+      uri: mongodb://localhost:27017/secure
+      repositories:
+        type: auto
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    hibernate:
+      ddl-auto: update
